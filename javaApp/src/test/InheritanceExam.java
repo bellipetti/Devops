@@ -1,9 +1,8 @@
-package test;
-
+package test; 
 
 // 사원 클래스 : Super class
-// 추상 클래스
-abstract class Employee {
+
+class Employee {
     // field
     public String no;
     public String name;
@@ -18,11 +17,10 @@ abstract class Employee {
         this.name = name;
     }
 
-    // 추상 메소드
-    public abstract int payCheck();
+    public int payCheck() {
+        return 0;
+    }
 
-
-    // 구상 메소드    
     public void printEmployee() {
         System.out.println("사번 : " + no);
         System.out.println("이름 : " + name);
@@ -48,7 +46,6 @@ class Regular extends Employee {
         this.pay = pay;        
     }
 
-    // 구상 메소드
     @Override
     public int payCheck() {
         return pay;
@@ -104,16 +101,21 @@ public class InheritanceExam {
 
     public static void main(String[] args) {
 
-        // 사원 객체 생성
-        // Employee emp = new Employee("E0000", "홍길동");
-        // System.out.println(emp.payCheck());
-        // emp.printEmployee();
-
         // 정규직 사원 객체 생성
         Regular emp1 = new Regular("E001", "일길동", 1000000);
         System.out.println(emp1.payCheck());
         emp1.printEmployee();
 
+
+        // 일용직 사원 객체 생성
+        Daily emp2 = new Daily("E002", "이길동", 20, 100000);
+        System.out.println(emp2.payCheck());
+        emp2.printEmployee();
+
+        // 사원 객체 생성
+        Employee emp = new Employee("E0000", "홍길동");
+        System.out.println(emp.payCheck());
+        emp.printEmployee();
 
         
     }
