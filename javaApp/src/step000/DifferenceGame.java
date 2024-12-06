@@ -1,4 +1,4 @@
-package step000.Games;
+package step000;
 import java.util.Random;
 import java.util.Scanner;
 
