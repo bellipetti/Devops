@@ -19,7 +19,7 @@
 <body> 
     <hi>Hi, HTML!!</hi>    
     <!-- <button id="btn" type="button">Click</button>   -->
-    <!-- 간단한방법 -->
+    <!-- 아래 간단한방법 -->
     <button id="btn" type="button" onclick="console.log('click!!');" >Click</button>
 </body>
 </html>
