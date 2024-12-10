@@ -9,7 +9,7 @@
 // console.log('result : ', result);
 
 
-// 단락평가 : 논리 OR 연산자
+// 단략 평가 : 논리 OR 연산자
 
 // let a = 0;  //falsy 값
 // let b =false;

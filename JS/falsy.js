@@ -1,4 +1,4 @@
-
+// falsy.js  <->  index.html
 // falsy.js
 
 // falsy와 truthy
