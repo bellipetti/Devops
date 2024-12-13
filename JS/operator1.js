@@ -1,3 +1,4 @@
+// operator1.js  <->  main1.html
 
 // 비교 연산자
 

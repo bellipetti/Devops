@@ -1,3 +1,5 @@
+// variable.js <->  main1.html
+
 
 // [변수]
 

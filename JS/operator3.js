@@ -1,4 +1,4 @@
-// operator3.js
+// operator3.js <->  main1.html
 // 논리 연산자
 
 // let a = true;

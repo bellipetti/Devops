@@ -1,4 +1,4 @@
-// scope.js
+// scope.js <->  main1.html
 
 {
     // block scope

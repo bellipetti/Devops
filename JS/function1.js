@@ -1,5 +1,5 @@
 
-// function1.js
+// function1.js <-> main1.html
 
 // 함수 선언문 : 함수 선언을 하면서 전달을 하는거
 function sayHello(username) {

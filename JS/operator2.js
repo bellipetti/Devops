@@ -1,4 +1,4 @@
-// operator2.js
+// operator2.js <->  main1.html
 
 // 삼항 연산자
 
