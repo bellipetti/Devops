@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+   
+        <title>DOM (DOCUMENT Object Modoel)</title>
+        <style> 
+            /* 선택자: Selector */   
+            .highlight {  /* class 선택자 */
+                background-color: yellow;
+            }
+
+         
+        </style>
+    
+    <body>
+        <h1>Hello</h1>
+        <!-- 아이디는 중복 불가, 클래스는 중복 가능 -->
+     <p class="highlight">Hi</p>   
+     <p class="highlight">안녕</p>  
+
+     
+    </body>   
+    <script>
+        
+        const pElements = document.querySelectorAll('.highlight')
+        
+        console.log('pElements size : ', pElements.length);
+        
+
+        pElements.forEach(function (pElements, index) {
+            console.log('pElement : ', pElements);
+            console.log('pElement text : ', pElements.textContent);
+            
+            
+        });
+
+    </script>
+   
+
+
+
+</html>

@@ -1,0 +1,29 @@
+
+<html>
+    <head>
+        <title>노드생성 - DOM (DOCUMENT Object Modoel)</title>
+        <style> 
+            /* 선택자: Selector */   
+            .highlight {  /* class 선택자 */
+                background-color: yellow;
+            }       
+        </style>
+    <body>
+        <h1>Hello</h1>
+        <!-- 아이디는 중복 불가, 클래스는 중복 가능 -->
+     <p class="highlight">Hi</p>   
+     <p class="highlight">안녕</p>    
+    </body>   
+    <script>
+        // 생성
+        const h1Elment = document.createElement('h1');
+
+        const textNode = document.createTextNode('Welcome');
+
+        // 출력
+        h1Elment.appendChild(textNode);
+
+        document.body.appendChild(h1Elment);
+   
+    </script>
+</html>

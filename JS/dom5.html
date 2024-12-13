@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <title>노드생성 - DOM (DOCUMENT Object Modoel)</title>
+        <style> 
+            /* 선택자: Selector */   
+            .highlight {  /* class 선택자 */
+                background-color: yellow;
+            }       
+        </style>
+    <body>
+        <h1>Hello</h1>
+        <!-- 아이디는 중복 불가, 클래스는 중복 가능 -->
+        <p class="highlight">Hi</p>   
+        <p class="highlight">안녕</p>    
+        <h1 id="h1">Welcome</h1>
+    </body>   
+    <script>
+      // ID를 이용해서 웰컴 접근
+        const h1Elment = document.getElementById('h1');
+        document.body.removeChild(h1Elment);     //document.body에서 웰컴의 부모(body) 가 와야한다 
+   
+    </script>
+</html>

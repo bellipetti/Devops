@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script>
+        //event hahdler: callback함수, 콜백함수 페이지가 모두 로드된 다음에 수행
+        window.addEventListener('load' , function() {  
+            console.log('load');
+
+            const btn = document.getElementById('btn');
+            btn.addEventListener('click', function() {
+                console.log('click');
+                console.log('this : ', this);      
+                this.style.backgroundColor = 'yellow';          
+            })            
+        });
+    </script>
+</head>
+<body>
+    <script>
+       
+        
+    </script>
+    <button id="btn" type="button">Click</button>
+</body>
+</html>

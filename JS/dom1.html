@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+   
+        <title>DOM (DOCUMENT Object Modo)</title>
+    
+    <body>
+        <h1>Hello</h1>
+     <p id="p1">Hi</p>   
+     <p id="p2">안녕</p>
+    </body>   
+    <!-- body 라는 태그가 끝날 때 DOM 이 생성된다 <script> 를 바디밑에 생성 이유-->
+    <script>
+
+        const pElement = document.getElementById('p1');
+        console.log('pElement : ', pElement); // <p id=p1">Hi</p>
+        console.log('pElement tagName : ', pElement.tagName); //pElement tagName :  P
+        console.log('pElement id : ', pElement.id); //pElement id :  p1
+        console.log('pElement nodeType: ', pElement.nodeType); //pElement nodeType:  1
+        console.log('pElement text: ', pElement.textContent); //pElement text:  Hi
+        
+        pElement.style.backgroundColor = 'yellow';
+    
+    </script>
+
+
+
+</html>
