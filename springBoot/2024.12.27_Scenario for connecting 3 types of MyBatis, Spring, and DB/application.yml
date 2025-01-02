@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: testApp
+  # DB 연결 정보
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.30.52.175:3306/db_board?serverTimezone=Asia/Seoul&characterEncoding=utf8
+    username: react
+    password: Pythonmysql1!
+
+logging: 
+  level:
+    root: DEBUG
+
+    
+# MyBatis 설정 정보
+mybatis:  
+  mapper-locations: classpath:/mapper/**/*.xml
+  type-aliases-package: com.example.testapp.domain
+

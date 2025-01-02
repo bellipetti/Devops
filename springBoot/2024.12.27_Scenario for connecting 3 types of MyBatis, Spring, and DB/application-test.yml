@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.30.52.175:3306/db_board?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: react
+    password: Pythonmysql1!
+  hikari:
+      connection-timeout: 20000
+    
+# MyBatis 설정 정보
+mybatis:  
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example1.testapp.domain
+
+# 로그 레벨
+logging:
+  level:
+    com.example.boardapp.mapper: debug
+    org.mybatis: debug
+    org.springframework.jdbc.core: debug
